@@ -1,4 +1,4 @@
-# hello2.py
+# lab 2.2.11_hello2.py
 # This program reads my name and prints it
 # Author Sharon Curley
 

@@ -1,5 +1,5 @@
-# hello.py
+# lab 2.2.4_hello.py
 # This program says hello
-# Authr Sharon Curley
+# Author Sharon Curley
 
 print ("Hello Sharon")

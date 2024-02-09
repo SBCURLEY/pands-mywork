@@ -1,4 +1,4 @@
-# lab3.1_testTypes.py
+# lab3.1.1_testTypes.py
 # This program creates five variables (int, float, boolean, str, list)
 # Author: Sharon Curley
 

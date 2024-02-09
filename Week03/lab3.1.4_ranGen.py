@@ -1,4 +1,4 @@
-# lab3.1_randomGenerator.py
+# lab3.1.4_randomGenerator.py
 # This program prints out a random number between 1 and 10.
 # Author: Sharon Curley
 

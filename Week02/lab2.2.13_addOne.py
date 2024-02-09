@@ -1,5 +1,5 @@
-# addOne.py
-# This program reads a number and prints out one more than tht number
+# lab2.2.13_addOne.py
+# This program reads a number and prints out one more than that number
 # Author Sharon Curley
 
 number = int(input ("Please enter a number: "))

@@ -1,4 +1,4 @@
-# lab3.1_sub.py
+# lab3.1.2_sub.py
 # This program subtracts one number from another
 # Author: Sharon Curley
 
