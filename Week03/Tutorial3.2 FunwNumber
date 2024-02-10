@@ -1,0 +1,10 @@
+# Tutorial3.2 FunwNumber
+# Messing around with Numbers
+# Author: Sharon Curley
+
+afloat = .29
+ascent = afloat * 100
+
+print (f"{afloat} as cent is {ascent}")
+
+# Be careful of floating point numbers

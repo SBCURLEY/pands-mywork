@@ -1,0 +1,24 @@
+# Tutorial3.2 FunwStrings
+# Messing around with Strings
+# showing
+# Escape characters
+# adding numbers to Strings
+# splicing
+# Author: Sharon Curley
+
+# escape characters
+astring = "He said \"Hello\""
+print (astring)
+
+# adding numbers to strings
+mark = 33
+string2 = "Your mark is: "+str(mark)           # must use str() as it cannot concatenate str (not 'int') to str
+print (string2)
+
+# splicing
+accountno = "12346789"             # get the first two number of an account number
+print (accountno[:4])            # colon is from the beginning to 4th digit
+
+# splicing2
+accountno = "12346789"             # get the first two number of an account number
+print (accountno[0:4])            # certain digit to the end

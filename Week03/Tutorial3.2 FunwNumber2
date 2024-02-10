@@ -1,0 +1,10 @@
+# Tutorial3.2 FunwNumber2
+# Messing around with Numbers
+# Author: Sharon Curley
+
+afloat = .29
+ascent = int(afloat)
+
+print (f"{afloat} as cent is {ascent}")
+
+# Be careful of floating point numbers
