@@ -1,3 +1,4 @@
+# lab04.02.06-topthree.py
 # This program generates 10 random numbers.
 # prints them out, then
 # prints out the top 3
@@ -6,3 +7,23 @@
 # manipulate the numbers
 #
 # Author: Sharon Curley
+
+import random# 
+#I programming the general case
+howMany     = 10
+topHowMany  = 3
+rangeFrom   = 0
+rangeTo     = 100
+
+numbers = []
+
+for i in range(0,howMany):
+    numbers.append(random.randint(rangeFrom,rangeTo))
+print (f"{howMany} random numbers\t{numbers}")
+
+# I am keeping the original list - maybe I do not need to
+topOnes = numbers.copy()
+
+topOnes.sort(reverse = True)
+print(f"The top {topHowMany} are \t\t {topOnes[0:topHowMany]}")
+

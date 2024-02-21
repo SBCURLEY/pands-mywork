@@ -1,11 +1,16 @@
-# lab04.02.03-guess2.py
+# lab04.02.04-guess3.py
 # prompts the user to guess a number and stops when they get it right
 # the program will tell the user if they were too high or too low
 # Author: Sharon Curley
 
+import random
+guess = random.randint(1,100)
+print ("Here is a random number {}".format(guess))
+
 numberToGuess = 30
 
-guess = int(input("Please guess the number: "))
+#guess = int(input("Please guess the number: "))
+#guess = numberToGuess
 while guess != numberToGuess:
     if guess < numberToGuess:
         print("Too low")
