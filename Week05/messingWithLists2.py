@@ -1,6 +1,6 @@
 # messingWithLists2.py
 # These code examples are in the Jupyter notebook in course material
-# Author: Sharon Curley
+# Author: Sharon Curley (lecture)
 
 '''
 ages = [12,21,2# messingWithLists.py   # list of ages

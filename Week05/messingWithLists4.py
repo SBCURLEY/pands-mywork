@@ -1,6 +1,6 @@
 # messingWithLists3.py
 # These code examples are in the Jupyter notebook in course material TUPLES
-# Author: Sharon Curley
+# Author: Sharon Curley (lecture)
 
 # Tuples are in many ways similar to lists, but they are defined with parentheses () rather than square brackets []:
 # They allow you to pass back multiple functions

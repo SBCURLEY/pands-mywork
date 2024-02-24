@@ -1,6 +1,6 @@
 # messingWithLists.py
 # These code examples are in the Jupyter notebook in course material
-# Author: Sharon Curley
+# Author: Sharon Curley (lecture)
 
 boats = ["sigma", 23, [1,2,3,],{}]     # {} is dictionary
 

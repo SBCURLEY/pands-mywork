@@ -1,6 +1,6 @@
 # messingWithLists3.py
 # These code examples are in the Jupyter notebook in course material
-# Author: Sharon Curley
+# Author: Sharon Curley (lecture)
 
 string = "1234567890"
 #print(string[-6:])            # last 6 digits to the end
