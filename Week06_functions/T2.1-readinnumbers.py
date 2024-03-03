@@ -38,7 +38,7 @@ print(f"Answer is {answer}")
 '''
 
 
-# The above is a classic example of having to crete a function    
+# The above is a classic example of having to create a function    
 # If you want to make a small change you have to change in two places
 
 def readNum(message="Enter a number: "):             # message will default to enter a number
