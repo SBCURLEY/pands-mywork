@@ -4,7 +4,7 @@
 
 import os.path
 
-FILENAME = "count.txt"
+FILENAME = "count1.txt"
 if not os.path.isfile(FILENAME):
     print("File does not exist")
     # initialise file here

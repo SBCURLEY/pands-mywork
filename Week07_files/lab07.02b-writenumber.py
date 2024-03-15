@@ -9,4 +9,4 @@ def writeNumber (number):
         f.write(str(number))
         
 # test it
-writeNumber(3)
+writeNumber(4)
