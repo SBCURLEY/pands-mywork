@@ -31,3 +31,4 @@ print (normalrando)
 #Generating 
 normalrando = np.random.normal (loc=50, scale=20, size=100)
 print (normalrando)
+
