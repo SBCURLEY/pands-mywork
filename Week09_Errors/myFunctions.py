@@ -1,37 +1,47 @@
-# myFunctions.py
-## a module of useful functions
-# Author: Sharon Curley (lecture notes)
+# lab9.0- myFunctions.py
+# This program is to show how to make a module,  
+# that contains functions, and test cases for the functions
+# it has a function called fibonacci that takes in number
+# and returns a list containing a fibonacci sequence with that many numbers
 
-import logging
-logging.basicConfig(filename="./bank.log",
-                    level=logging.DEBUG,
-                    format="%(asctime)s-%(levelname)s-%(message)s-%(filename)s-%(lineno)d")
+# A Fibonacci sequence is a series of numbers that starts off with 0 and 1 and each 
+# subsequence number is the sum of the previous two. 
 
-balance = 100
+import logging                                                  
+#logging.basicConfig(level=logging.DEBUG)
 
-def withdraw(amount):
-    global balance
-    if amount < 0:
-        logging.critical(f"the amount ({amount}) should never be less than 0")
-        raise ValueError("amount should always be greater than 0")
-    if amount > balance:
-        logging.warning(f"trying to withdraw more ({amount}) than is in account ({balance})")
-        raise ValueError("not enough funds")
-    balance = balance - amount
-    logging.info(f"we have just withdrawn {amount} new balance is{balance}")
-    return balance
+def fibonacci (number):
+    if number < 0:
+        raise ValueError('number must be > 0')
+    if number == 0:
+        return []
+    a=0
+    b=1
+    fibonacciSequence=[0]                                       # we have one in the list already so number - 1 times
+    for i in range(1,number):
+        fibonacciSequence.append(b)
+        a, b=b,a+b
+    logging.debug("%d: %s", number, fibonacciSequence)
+    return fibonacciSequence
 
-if __name__ == "__main__":                                      # this will ony run when myfunctions.py is run. Not in a test program
-    assert withdraw(110) == 80 , "incorrect calculation"         # if the calculation is correct(20), print all good. If not (10), it will give an assert error incorrect calculation
+
+if __name__ == "__main__":    
+    return7=[0,1,1,2,3,5,8]
+    return11=[0,1,1,2,3,5,8,13,21,34,55]
+    assert fibonacci(7) == return7, "Incorrect return for 7)"
+    assert fibonacci(11) == return11, "Incorrect return for 11"
+    assert fibonacci (0) ==[], "Incorrect return value for 0"
+    assert fibonacci (1) == [0], "incorrect value for 1"
     try:
-        withdraw(-1)
-        assert False, "should have thrown a value error"        # try -1 - AssertionError:should have thrown a value error
-    except ValueError as ve:                                    
-        pass
+        fibonacci(-1)
+    except ValueError:                                          # we want this exception to be thrown
+        pass                                                    # so this is an example where we want to do nothing
+    else:                                                       # if the exception was not thrown we should throw an Assertion error
+        assert False, "Fibonacci missing ValueError"            # # or raise AssertionError("fibonacci should have thrown a value Error ")
+        
     
-    try:
-        withdraw(110)                                           # withdrawing more than what is in there
-        assert False, "can't withdraw more than is in balance"
-    except ValueError as ve:
-        pass
-    print ("all good")
+    
+    
+
+    # tests will go here
+    print("all good")
