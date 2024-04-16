@@ -29,6 +29,7 @@ df.drop_duplicates(inplace=True)
 df = df.pivot_table(values='grade',index=['name','subject'],aggfunc='max').reset_index()
 
 print(df)
+print(type(df))
 
 #   meanValues = df.groupby('name').mean() 
 #   print(meanValues)
