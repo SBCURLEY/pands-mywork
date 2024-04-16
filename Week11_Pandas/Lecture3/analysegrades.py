@@ -4,8 +4,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
-
 # I made this var to make it easier to change the location of the files
 
 path = '../data/'
@@ -26,6 +24,10 @@ df = pd.read_csv(filenameForGrades, index_col=0)    # starts counting from zero
 
 df.dropna(inplace=True)
 df.drop_duplicates(inplace=True)
+
+# Remove the lower grade for John as he has two for Programming
+df = df.pivot_table(values='grade',index=['name','subject'],aggfunc='max').reset_index()
+
 print(df)
 
 #   meanValues = df.groupby('name').mean() 
@@ -38,25 +40,20 @@ print(meanValues)
 meanValues = df.groupby('name')['grade'].mean()
 
 print(meanValues)
+print(type(meanValues))
 
 # https://www.statology.org/pandas-mean-by-group/
 
+
+df = df.pivot(index='name',columns='subject',values='grade')     # add labels to bar
+print(df.corr())                # statistics - print a corralation table 
+df.plot.bar()               # plot a bar graph
+#plt.show()
+
+# look at plot on Panda documentation   https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.plot.html#pandas.DataFrame.plot
+
+
 '''
-# select the highest grade for each subject for a student
-df = df.pivot_table(values='grade',index=['name','subject'],aggfunc='max').reset_index()
-
-
-
-
-df = df.pivot(index='name',columns='subject',values='grade')
-
-# print a corralation table 
-print(df.corr())
-
-
-# plot a bar graph
-df.plot.bar()
-
 # I meant to say in the lecture if you want to plot a sub-set of the dataframe
 # then just select the parts you want to plot
 # eg
